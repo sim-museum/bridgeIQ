@@ -1,0 +1,33 @@
+{
+"name": "StandardAcol",
+"description": "Standard Acol",
+"source": "biq's own settings for this system",
+"settings": [
+  ["open.strong_2c.forcing_to_3nt", true, null],
+  ["open.1nt.min_hcp_vul", true, 12],
+  ["open.1nt.max_hcp_vul", true, 14],
+  ["open.1nt.min_hcp_nv", true, 12],
+  ["open.1nt.max_hcp_nv", true, 14],
+  ["open.1nt.no_five_major", true, null],
+  ["open.2d.strong", true, null],
+  ["open.2major.strong", true, null],
+  ["open.2nt.range-21-22", true, null],
+  ["resp.major.2nt_natural_11_12", true, null],
+  ["resp.two_over_one.min_hcp-9", true, null],
+  ["nt.stayman", true, null],
+  ["nt.stayman_garbage", true, null],
+  ["nt.3minor_invitational", true, null],
+  ["resp.strong_2c.2d_negative", true, null],
+  ["rebid.1nt_after_1_1.width-2", true, null],
+  ["gen.new_minor_forcing", true, null],
+  ["rebid.2nt_jump.range-17-18", true, null],
+  ["gen.fourth_suit_forcing", true, null],
+  ["def.1nt.landy", true, null],
+  ["comp.negative_double.through-2S", true, null],
+  ["comp.negative_free_bids", true, null],
+  ["comp.1nt_doubled.escapes", true, null],
+  ["comp.1nt_landy_cue_is_stopper", true, null],
+  ["slam.gerber", true, null],
+  ["slam.blackwood_classic", true, null]
+]
+}

@@ -1,0 +1,10 @@
+# bridgeIQ deal filter
+.description.eng = "North-South have 20+ HCP and an eight-card fit, not in a minor"
+
+join = A
+search = 300
+N/S.join = A
+N/S.total = 20.*
+N/S.Diamond = *.7
+N/S.Club = *.7
+N/S.S1 = 8.*

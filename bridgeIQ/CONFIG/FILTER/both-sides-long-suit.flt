@@ -1,0 +1,9 @@
+# bridgeIQ deal filter
+.description.eng = "Both sides hold a nine-card suit (competitive auctions)"
+
+join = A
+search = 300
+N/S.join = A
+N/S.S1 = 9.*
+E/W.join = A
+E/W.S1 = 9.*

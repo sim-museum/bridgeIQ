@@ -1,0 +1,79 @@
+{
+  "version": 1,
+  "_comment": "Situation -> short coaching-note templates, authored from the book corpus (backend/data/coach/corpus.jsonl). Rules are matched in order; the FIRST rule whose every 'when' feature equals the live feature wins. Features are booleans/strings precomputed in ui/coach_notes.py. Templates are str.format'd with live values (system ranges, vulnerability, the actual visible/inferable cards) — no citations, ~<=45 words.",
+  "rules": [
+    {"id": "open_strong", "phase": "bidding",
+     "when": {"situation": "opening", "strength": "strong"},
+     "topics": ["strong_club", "rkc"],
+     "template": "{hcp} HCP — too strong for one of a suit. Open {strong_call}, your system's strong artificial force, then describe. {vuln_clause}"},
+
+    {"id": "open_2nt", "phase": "bidding",
+     "when": {"situation": "opening", "nt_range": "2nt"},
+     "topics": ["notrump_opening"],
+     "template": "Balanced {hcp} — open 2NT ({nt2_min}-{nt2_max} in {system}). One bid limits the hand; partner takes over with Stayman/transfers."},
+
+    {"id": "open_1nt", "phase": "bidding",
+     "when": {"situation": "opening", "nt_range": "1nt"},
+     "topics": ["notrump_opening"],
+     "template": "Balanced {hcp} — a textbook 1NT ({nt_min}-{nt_max} in {system}). It limits your hand in one bid; let partner place the contract."},
+
+    {"id": "open_preempt", "phase": "bidding",
+     "when": {"situation": "opening", "preempt": true},
+     "topics": ["weak_two"],
+     "template": "{hcp} HCP, {long_n}-card {long_suit} — a weak two/preempt ({wk_min}-{wk_max}). Bid to the level of your trumps. {vuln_clause}"},
+
+    {"id": "open_1_major", "phase": "bidding",
+     "when": {"situation": "opening", "openable": true, "has_5card_major": true},
+     "topics": ["responding", "rebid"],
+     "template": "{hcp} HCP with {long_n} {long_suit} — open 1{long_suit_char} (5-card majors). Show the major first; plenty to open."},
+
+    {"id": "open_1_minor", "phase": "bidding",
+     "when": {"situation": "opening", "openable": true, "has_5card_major": false},
+     "topics": ["responding"],
+     "template": "{hcp} HCP, no 5-card major — open your better minor and hunt for a major fit on the way up."},
+
+    {"id": "open_pass", "phase": "bidding",
+     "when": {"situation": "opening", "openable": false},
+     "topics": [],
+     "template": "Only {hcp} HCP and nothing long — pass. Don't open sub-minimum; you can still compete later if it's your hand."},
+
+    {"id": "bidding_generic", "phase": "bidding", "when": {"phase": "bidding"},
+     "topics": [],
+     "template": "{what}"},
+
+    {"id": "decl_nt_holdup", "phase": "play",
+     "when": {"role": "declarer", "trump": "no", "holdup": true},
+     "topics": ["holdup", "notrump_play"],
+     "template": "Hold up {holdup_suit}A — Rule of 7: duck {holdup_n}, exhausting {danger_seat} of the suit before you give up the lead."},
+
+    {"id": "decl_nt_general", "phase": "play",
+     "when": {"role": "declarer", "trump": "no"},
+     "topics": ["notrump_play", "establishment"],
+     "template": "No-trump: count sure winners, then knock out stoppers to set up {long_suit} ({long_n} together) — build before you cash, mind your entries."},
+
+    {"id": "decl_suit_master", "phase": "play",
+     "when": {"role": "declarer", "trump": "yes", "opp_master_trump": true},
+     "topics": ["drawing_trumps"],
+     "template": "Don't draw the last trump — an opponent holds the master {trump_sym}. Keep control, take your tricks, concede the trump at the end."},
+
+    {"id": "decl_suit_ruff_danger", "phase": "play",
+     "when": {"role": "declarer", "trump": "yes", "danger_ruff": true},
+     "topics": ["drawing_trumps", "ruff"],
+     "template": "Draw trumps first — {danger_seat} is void in {threat} and waiting to ruff. {finesse}"},
+
+    {"id": "decl_suit_general", "phase": "play",
+     "when": {"role": "declarer", "trump": "yes"},
+     "topics": ["drawing_trumps"],
+     "template": "Count losers, then ask: draw trumps? {out} out ({split}). Plan ruffs/finesses before touching trumps, then run {long_suit}. {finesse}"},
+
+    {"id": "def_nt", "phase": "play",
+     "when": {"role": "defender", "trump": "no"},
+     "topics": ["opening_lead", "signals"],
+     "template": "Defending NT: attack your longest suit (fourth-best), hold up your stopper, and count declarer's tricks. You need {set_target} to beat it."},
+
+    {"id": "def_suit", "phase": "play",
+     "when": {"role": "defender", "trump": "yes"},
+     "topics": ["opening_lead", "signals"],
+     "template": "Defending {trump_sym}: go active — cash or set up winners before they're pitched; lead a trump if a cross-ruff looms. {set_target} tricks beats it."}
+  ]
+}

@@ -1,0 +1,9 @@
+Card faces: Vector Playing Cards (https://github.com/notpeter/Vector-Playing-Cards),
+based on Byron Knoll's vector-playing-cards (https://code.google.com/archive/p/vector-playing-cards/).
+
+"These images, scripts and their output (for example, custom-sized PNGs) are released into
+the public domain, or optionally licensed under the WTFPL in jurisdictions where the public
+domain is not a recognized legal concept."
+
+Stored gzip-compressed (.svgz); bridgeIQ recolours diamonds and clubs at load time for the
+four-colour deck.

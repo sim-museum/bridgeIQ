@@ -1,0 +1,11 @@
+# bridgeIQ deal filter
+.description.eng = "South balanced, 15-17 HCP"
+
+join = A
+search = 100
+South.join = A
+South.hcp = 15.17
+South.Spade = 2.4
+South.Heart = 2.4
+South.Diamond = 2.5
+South.Club = 2.5

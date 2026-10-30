@@ -1,0 +1,8 @@
+# bridgeIQ deal filter
+.description.eng = "South 10 HCP or less with a seven-card suit"
+
+join = A
+search = 100
+South.join = A
+South.hcp = *.10
+South.S1 = 7.*

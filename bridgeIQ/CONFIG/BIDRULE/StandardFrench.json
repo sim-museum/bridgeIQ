@@ -1,0 +1,1002 @@
+{
+  "1C": {
+    "bid": "1C",
+    "name": "natural minor",
+    "is_artificial": false,
+    "is_forcing": false,
+    "hp_min": 12,
+    "hp_max": 21,
+    "lp_min": null,
+    "lp_max": null,
+    "tp_min": null,
+    "tp_max": null,
+    "tp_trump": "NT",
+    "aces_expr": "",
+    "kings_expr": "",
+    "suit_S": {
+      "min": 0,
+      "max": 4,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_H": {
+      "min": 0,
+      "max": 4,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_D": {
+      "min": 0,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_C": {
+      "min": 3,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "dependencies": "HP >= 12 & C >= 3 & S < 5 & H < 5"
+  },
+  "1D": {
+    "bid": "1D",
+    "name": "natural minor",
+    "is_artificial": false,
+    "is_forcing": false,
+    "hp_min": 12,
+    "hp_max": 21,
+    "lp_min": null,
+    "lp_max": null,
+    "tp_min": null,
+    "tp_max": null,
+    "tp_trump": "NT",
+    "aces_expr": "",
+    "kings_expr": "",
+    "suit_S": {
+      "min": 0,
+      "max": 4,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_H": {
+      "min": 0,
+      "max": 4,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_D": {
+      "min": 3,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_C": {
+      "min": 0,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "dependencies": "HP >= 12 & D >= 3 & S < 5 & H < 5"
+  },
+  "1H": {
+    "bid": "1H",
+    "name": "natural major",
+    "is_artificial": false,
+    "is_forcing": false,
+    "hp_min": 12,
+    "hp_max": 21,
+    "lp_min": null,
+    "lp_max": null,
+    "tp_min": null,
+    "tp_max": null,
+    "tp_trump": "NT",
+    "aces_expr": "",
+    "kings_expr": "",
+    "suit_S": {
+      "min": 0,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_H": {
+      "min": 5,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_D": {
+      "min": 0,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_C": {
+      "min": 0,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "dependencies": "HP >= 12 & H >= 5"
+  },
+  "1S": {
+    "bid": "1S",
+    "name": "natural major",
+    "is_artificial": false,
+    "is_forcing": false,
+    "hp_min": 12,
+    "hp_max": 21,
+    "lp_min": null,
+    "lp_max": null,
+    "tp_min": null,
+    "tp_max": null,
+    "tp_trump": "NT",
+    "aces_expr": "",
+    "kings_expr": "",
+    "suit_S": {
+      "min": 5,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_H": {
+      "min": 0,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_D": {
+      "min": 0,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_C": {
+      "min": 0,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "dependencies": "HP >= 12 & S >= 5\nHP >= 12 & S == 5 & H == 5"
+  },
+  "1NT": {
+    "bid": "1NT",
+    "name": "balanced opening",
+    "is_artificial": false,
+    "is_forcing": false,
+    "hp_min": 15,
+    "hp_max": 17,
+    "lp_min": null,
+    "lp_max": null,
+    "tp_min": null,
+    "tp_max": null,
+    "tp_trump": "NT",
+    "aces_expr": "",
+    "kings_expr": "",
+    "suit_S": {
+      "min": 2,
+      "max": 5,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_H": {
+      "min": 2,
+      "max": 5,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_D": {
+      "min": 2,
+      "max": 5,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_C": {
+      "min": 2,
+      "max": 5,
+      "control": "--",
+      "stopper": "--"
+    },
+    "dependencies": "HP >= 15 & HP <= 17\nS >= 2 & H >= 2 & D >= 2 & C >= 2"
+  },
+  "2NT": {
+    "bid": "2NT",
+    "name": "balanced 20-21",
+    "is_artificial": false,
+    "is_forcing": false,
+    "hp_min": 20,
+    "hp_max": 21,
+    "lp_min": null,
+    "lp_max": null,
+    "tp_min": null,
+    "tp_max": null,
+    "tp_trump": "NT",
+    "aces_expr": "",
+    "kings_expr": "",
+    "suit_S": {
+      "min": 2,
+      "max": 5,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_H": {
+      "min": 2,
+      "max": 5,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_D": {
+      "min": 2,
+      "max": 5,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_C": {
+      "min": 2,
+      "max": 5,
+      "control": "--",
+      "stopper": "--"
+    },
+    "dependencies": "HP >= 20 & HP <= 21\nS >= 2 & H >= 2 & D >= 2 & C >= 2"
+  },
+  "2H": {
+    "bid": "2H",
+    "name": "weak two",
+    "is_artificial": false,
+    "is_forcing": false,
+    "hp_min": 5,
+    "hp_max": 11,
+    "lp_min": null,
+    "lp_max": null,
+    "tp_min": null,
+    "tp_max": null,
+    "tp_trump": "NT",
+    "aces_expr": "",
+    "kings_expr": "",
+    "suit_S": {
+      "min": 0,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_H": {
+      "min": 6,
+      "max": 6,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_D": {
+      "min": 0,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_C": {
+      "min": 0,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "dependencies": "H == 6 & HP < 12"
+  },
+  "2S": {
+    "bid": "2S",
+    "name": "weak two",
+    "is_artificial": false,
+    "is_forcing": false,
+    "hp_min": 5,
+    "hp_max": 11,
+    "lp_min": null,
+    "lp_max": null,
+    "tp_min": null,
+    "tp_max": null,
+    "tp_trump": "NT",
+    "aces_expr": "",
+    "kings_expr": "",
+    "suit_S": {
+      "min": 6,
+      "max": 6,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_H": {
+      "min": 0,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_D": {
+      "min": 0,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_C": {
+      "min": 0,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "dependencies": "S == 6 & HP < 12"
+  },
+  "2D": {
+    "bid": "2D",
+    "name": "weak two",
+    "is_artificial": false,
+    "is_forcing": false,
+    "hp_min": 5,
+    "hp_max": 11,
+    "lp_min": null,
+    "lp_max": null,
+    "tp_min": null,
+    "tp_max": null,
+    "tp_trump": "NT",
+    "aces_expr": "",
+    "kings_expr": "",
+    "suit_S": {
+      "min": 0,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_H": {
+      "min": 0,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_D": {
+      "min": 6,
+      "max": 6,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_C": {
+      "min": 0,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "dependencies": "D == 6 & HP < 12"
+  },
+  "2C": {
+    "bid": "2C",
+    "name": "Strong 2C",
+    "is_artificial": true,
+    "is_forcing": true,
+    "hp_min": 22,
+    "hp_max": 40,
+    "lp_min": null,
+    "lp_max": null,
+    "tp_min": null,
+    "tp_max": null,
+    "tp_trump": "NT",
+    "aces_expr": "",
+    "kings_expr": "",
+    "suit_S": {
+      "min": 0,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_H": {
+      "min": 0,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_D": {
+      "min": 0,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_C": {
+      "min": 0,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "dependencies": "HP >= 22"
+  },
+  "2D over 2C": {
+    "bid": "2D",
+    "name": "2C waiting / negative",
+    "is_artificial": true,
+    "is_forcing": false,
+    "hp_min": 0,
+    "hp_max": 7,
+    "lp_min": null,
+    "lp_max": null,
+    "tp_min": null,
+    "tp_max": null,
+    "tp_trump": "NT",
+    "aces_expr": "",
+    "kings_expr": "",
+    "suit_S": {
+      "min": 0,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_H": {
+      "min": 0,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_D": {
+      "min": 0,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_C": {
+      "min": 0,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "dependencies": "HP < 8"
+  },
+  "2C over 1NT": {
+    "bid": "2C",
+    "name": "Stayman",
+    "is_artificial": true,
+    "is_forcing": true,
+    "hp_min": 8,
+    "hp_max": 40,
+    "lp_min": null,
+    "lp_max": null,
+    "tp_min": null,
+    "tp_max": null,
+    "tp_trump": "NT",
+    "aces_expr": "",
+    "kings_expr": "",
+    "suit_S": {
+      "min": 0,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_H": {
+      "min": 0,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_D": {
+      "min": 0,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_C": {
+      "min": 0,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "dependencies": "HP >= 8 & S >= 4\nHP >= 8 & H >= 4"
+  },
+  "2D over 1NT": {
+    "bid": "2D",
+    "name": "Jacoby Transfer to H",
+    "is_artificial": true,
+    "is_forcing": false,
+    "hp_min": null,
+    "hp_max": null,
+    "lp_min": null,
+    "lp_max": null,
+    "tp_min": null,
+    "tp_max": null,
+    "tp_trump": "NT",
+    "aces_expr": "",
+    "kings_expr": "",
+    "suit_S": {
+      "min": 0,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_H": {
+      "min": 5,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_D": {
+      "min": 0,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_C": {
+      "min": 0,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "dependencies": "H >= 5"
+  },
+  "2H over 1NT": {
+    "bid": "2H",
+    "name": "Jacoby Transfer to S",
+    "is_artificial": true,
+    "is_forcing": false,
+    "hp_min": null,
+    "hp_max": null,
+    "lp_min": null,
+    "lp_max": null,
+    "tp_min": null,
+    "tp_max": null,
+    "tp_trump": "NT",
+    "aces_expr": "",
+    "kings_expr": "",
+    "suit_S": {
+      "min": 5,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_H": {
+      "min": 0,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_D": {
+      "min": 0,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_C": {
+      "min": 0,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "dependencies": "S >= 5"
+  },
+  "4C over 1NT": {
+    "bid": "4C",
+    "name": "Gerber (ace-ask)",
+    "is_artificial": true,
+    "is_forcing": true,
+    "hp_min": 13,
+    "hp_max": 40,
+    "lp_min": null,
+    "lp_max": null,
+    "tp_min": null,
+    "tp_max": null,
+    "tp_trump": "NT",
+    "aces_expr": "",
+    "kings_expr": "",
+    "suit_S": {
+      "min": 0,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_H": {
+      "min": 0,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_D": {
+      "min": 0,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_C": {
+      "min": 0,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "dependencies": "HP >= 13"
+  },
+  "4NT over 4-level": {
+    "bid": "4NT",
+    "name": "Blackwood / RKCB (ace-ask)",
+    "is_artificial": true,
+    "is_forcing": true,
+    "hp_min": 15,
+    "hp_max": 40,
+    "lp_min": null,
+    "lp_max": null,
+    "tp_min": null,
+    "tp_max": null,
+    "tp_trump": "NT",
+    "aces_expr": "",
+    "kings_expr": "",
+    "suit_S": {
+      "min": 0,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_H": {
+      "min": 0,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_D": {
+      "min": 0,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_C": {
+      "min": 0,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "dependencies": "HP >= 15"
+  },
+  "3C": {
+    "bid": "3C",
+    "name": "preempt",
+    "is_artificial": false,
+    "is_forcing": false,
+    "hp_min": 6,
+    "hp_max": 10,
+    "lp_min": null,
+    "lp_max": null,
+    "tp_min": null,
+    "tp_max": null,
+    "tp_trump": "NT",
+    "aces_expr": "",
+    "kings_expr": "",
+    "suit_S": {
+      "min": 0,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_H": {
+      "min": 0,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_D": {
+      "min": 0,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_C": {
+      "min": 7,
+      "max": 7,
+      "control": "--",
+      "stopper": "--"
+    },
+    "dependencies": "C == 7 & HP < 11"
+  },
+  "3D": {
+    "bid": "3D",
+    "name": "preempt",
+    "is_artificial": false,
+    "is_forcing": false,
+    "hp_min": 6,
+    "hp_max": 10,
+    "lp_min": null,
+    "lp_max": null,
+    "tp_min": null,
+    "tp_max": null,
+    "tp_trump": "NT",
+    "aces_expr": "",
+    "kings_expr": "",
+    "suit_S": {
+      "min": 0,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_H": {
+      "min": 0,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_D": {
+      "min": 7,
+      "max": 7,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_C": {
+      "min": 0,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "dependencies": "D == 7 & HP < 11"
+  },
+  "3H": {
+    "bid": "3H",
+    "name": "preempt",
+    "is_artificial": false,
+    "is_forcing": false,
+    "hp_min": 6,
+    "hp_max": 10,
+    "lp_min": null,
+    "lp_max": null,
+    "tp_min": null,
+    "tp_max": null,
+    "tp_trump": "NT",
+    "aces_expr": "",
+    "kings_expr": "",
+    "suit_S": {
+      "min": 0,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_H": {
+      "min": 7,
+      "max": 7,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_D": {
+      "min": 0,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_C": {
+      "min": 0,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "dependencies": "H == 7 & HP < 11"
+  },
+  "3S": {
+    "bid": "3S",
+    "name": "preempt",
+    "is_artificial": false,
+    "is_forcing": false,
+    "hp_min": 6,
+    "hp_max": 10,
+    "lp_min": null,
+    "lp_max": null,
+    "tp_min": null,
+    "tp_max": null,
+    "tp_trump": "NT",
+    "aces_expr": "",
+    "kings_expr": "",
+    "suit_S": {
+      "min": 7,
+      "max": 7,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_H": {
+      "min": 0,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_D": {
+      "min": 0,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_C": {
+      "min": 0,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "dependencies": "S == 7 & HP < 11"
+  },
+  "X": {
+    "bid": "X",
+    "name": "takeout double",
+    "is_artificial": false,
+    "is_forcing": false,
+    "hp_min": 12,
+    "hp_max": 40,
+    "lp_min": null,
+    "lp_max": null,
+    "tp_min": null,
+    "tp_max": null,
+    "tp_trump": "NT",
+    "aces_expr": "",
+    "kings_expr": "",
+    "suit_S": {
+      "min": 0,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_H": {
+      "min": 0,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_D": {
+      "min": 0,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_C": {
+      "min": 0,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "dependencies": "HP >= 12"
+  },
+  "XX": {
+    "bid": "XX",
+    "name": "redouble (strength)",
+    "is_artificial": false,
+    "is_forcing": false,
+    "hp_min": 10,
+    "hp_max": 40,
+    "lp_min": null,
+    "lp_max": null,
+    "tp_min": null,
+    "tp_max": null,
+    "tp_trump": "NT",
+    "aces_expr": "",
+    "kings_expr": "",
+    "suit_S": {
+      "min": 0,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_H": {
+      "min": 0,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_D": {
+      "min": 0,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_C": {
+      "min": 0,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "dependencies": "HP >= 10"
+  },
+  "1H over 1C": {
+    "bid": "1H",
+    "name": "natural response",
+    "is_artificial": false,
+    "is_forcing": false,
+    "hp_min": 6,
+    "hp_max": 18,
+    "lp_min": null,
+    "lp_max": null,
+    "tp_min": null,
+    "tp_max": null,
+    "tp_trump": "NT",
+    "aces_expr": "",
+    "kings_expr": "",
+    "suit_S": {
+      "min": 0,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_H": {
+      "min": 4,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_D": {
+      "min": 0,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_C": {
+      "min": 0,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "dependencies": "HP >= 6 & H >= 4"
+  },
+  "1S over 1C": {
+    "bid": "1S",
+    "name": "natural response",
+    "is_artificial": false,
+    "is_forcing": false,
+    "hp_min": 6,
+    "hp_max": 18,
+    "lp_min": null,
+    "lp_max": null,
+    "tp_min": null,
+    "tp_max": null,
+    "tp_trump": "NT",
+    "aces_expr": "",
+    "kings_expr": "",
+    "suit_S": {
+      "min": 4,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_H": {
+      "min": 0,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_D": {
+      "min": 0,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_C": {
+      "min": 0,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "dependencies": "HP >= 6 & S >= 4"
+  },
+  "1NT over 1S": {
+    "bid": "1NT",
+    "name": "non-forcing 6-9",
+    "is_artificial": false,
+    "is_forcing": false,
+    "hp_min": 6,
+    "hp_max": 9,
+    "lp_min": null,
+    "lp_max": null,
+    "tp_min": null,
+    "tp_max": null,
+    "tp_trump": "NT",
+    "aces_expr": "",
+    "kings_expr": "",
+    "suit_S": {
+      "min": 0,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_H": {
+      "min": 0,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_D": {
+      "min": 0,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "suit_C": {
+      "min": 0,
+      "max": 13,
+      "control": "--",
+      "stopper": "--"
+    },
+    "dependencies": "HP >= 6 & HP <= 9"
+  }
+}

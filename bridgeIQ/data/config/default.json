@@ -1,0 +1,48 @@
+{
+    "version": "1.0.0",
+    "window": {
+        "width": 1200,
+        "height": 800,
+        "maximized": false
+    },
+    "players": {
+        "north": {
+            "type": "computer",
+            "name": "North",
+            "visible": true
+        },
+        "east": {
+            "type": "computer",
+            "name": "East",
+            "visible": true
+        },
+        "south": {
+            "type": "human",
+            "name": "You",
+            "visible": true
+        },
+        "west": {
+            "type": "computer",
+            "name": "West",
+            "visible": true
+        }
+    },
+    "game": {
+        "scoring": "imp",
+        "deal_source": "random",
+        "start_board": 1,
+        "auto_advance": true
+    },
+    "display": {
+        "card_style": "standard",
+        "suit_order": "shdc",
+        "animate_cards": true,
+        "show_hcp": true,
+        "vulnerability_colors": true
+    },
+    "engine": {
+        "config_file": "default.conf",
+        "thinking_time": 2000,
+        "verbose": false
+    }
+}

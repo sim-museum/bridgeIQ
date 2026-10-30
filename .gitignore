@@ -1,0 +1,10 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Your games, logs and matches (created when you play)
+bridgeIQ/DATA/
+
+# Your analysis-view settings (created when you use it)
+bridgeIQ/CONFIG/teaching_view.json

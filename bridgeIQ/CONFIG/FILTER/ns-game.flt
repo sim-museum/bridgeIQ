@@ -1,0 +1,7 @@
+# bridgeIQ deal filter
+.description.eng = "North-South have game values (27+ HCP together)"
+
+join = A
+search = 100
+N/S.join = A
+N/S.total = 27.*
